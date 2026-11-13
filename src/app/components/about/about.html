@@ -1,0 +1,121 @@
+<!-- Hero Section -->
+<section class="about-hero">
+
+  <div class="hero-content">
+    <span class="subtitle">WELCOME TO OUR WORLD</span>
+
+    <h1>We Build <span>Something</span> Extraordinary</h1>
+
+    <p>
+      Discover our journey, our passion and our commitment
+      to delivering excellence in everything we do.
+    </p>
+
+    <a href="#story" class="hero-btn">Discover Our Story →</a>
+  </div>
+
+  <div class="hero-image">
+    <img
+      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1000"
+      alt="Our professional team">
+  </div>
+
+</section>
+
+<!-- Statistics -->
+<section class="stats-section">
+
+  <div class="stat-box" *ngFor="let stat of stats">
+    <h2>{{ stat.number }}</h2>
+    <p>{{ stat.label }}</p>
+  </div>
+
+</section>
+
+<!-- Our Story -->
+<section class="story-section" id="story">
+
+  <div class="story-image">
+    <img
+      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000"
+      alt="Our company story">
+  </div>
+
+  <div class="story-content">
+
+    <span class="subtitle">WHO WE ARE</span>
+
+    <h2>Our Story & <span>Journey</span></h2>
+
+    <p>
+      Every great achievement begins with a vision.
+      Our journey started with a simple idea: to create
+      something meaningful, valuable and extraordinary.
+    </p>
+
+    <p>
+      Through dedication, creativity and teamwork,
+      we continue to grow, innovate and deliver
+      experiences that exceed expectations.
+    </p>
+
+    <a href="#values" class="story-btn">Learn More →</a>
+
+  </div>
+
+</section>
+
+<!-- Mission Vision Values -->
+<section class="values-section" id="values">
+
+  <div class="section-heading">
+    <span class="subtitle">WHAT DRIVES US</span>
+    <h2>Our Mission & <span>Values</span></h2>
+    <p>Everything we do is guided by our core principles.</p>
+  </div>
+
+  <div class="values-grid">
+
+    <div class="value-card" *ngFor="let item of features">
+
+      <div class="value-icon">{{ item.icon }}</div>
+
+      <h3>{{ item.title }}</h3>
+
+      <p>{{ item.description }}</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+
+  <div class="section-heading">
+    <span class="subtitle">THE PEOPLE BEHIND US</span>
+    <h2>Meet Our <span>Team</span></h2>
+    <p>Great people create great experiences.</p>
+  </div>
+
+  <div class="team-image">
+    <img
+      src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1400"
+      alt="Our team working together">
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+
+  <h2>Let's Create Something Amazing Together</h2>
+
+  <p>
+    Have a project or an idea? We would love to hear from you.
+  </p>
+
+  <a href="/contact" class="cta-btn">Contact Us →</a>
+
+</section>

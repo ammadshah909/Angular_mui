@@ -1,0 +1,136 @@
+<section class="home-section">
+
+  <!-- Hero Section -->
+  <div class="hero-container">
+
+    <div class="hero-content">
+
+      <span class="welcome-label">WELCOME TO TASKMASTER</span>
+
+      <h1>
+        Manage Your Work.<br>
+        <span>Achieve More.</span>
+      </h1>
+
+      <p>
+        Organize your daily activities, manage your tasks
+        and increase your productivity with our smart
+        task management system.
+      </p>
+
+      <a href="#tasks" class="hero-btn">Get Started →</a>
+
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1000"
+        alt="Modern workspace">
+    </div>
+
+  </div>
+
+  <!-- Statistics -->
+  <div class="stats-container">
+
+    <div class="stat-card">
+      <h2>{{ tasksList.length }}</h2>
+      <p>Total Tasks</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>{{ tasksList.length }}</h2>
+      <p>Active Tasks</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>24/7</h2>
+      <p>Productivity</p>
+    </div>
+
+  </div>
+
+  <!-- Task Manager -->
+  <div class="task-section" id="tasks">
+
+    <div class="task-heading">
+      <span>YOUR WORKSPACE</span>
+      <h2>Manage Your <span>Tasks</span></h2>
+      <p>Stay organized and get things done.</p>
+    </div>
+
+    <div class="task-card">
+
+      <h3>Create New Task</h3>
+
+      <div class="input-row">
+
+        <mat-form-field appearance="outline" class="custom-field">
+
+          <mat-label>Enter a task</mat-label>
+
+          <input
+            matInput
+            [(ngModel)]="task"
+            (keyup.enter)="addTask()"
+            placeholder="e.g. Learn Angular">
+
+        </mat-form-field>
+
+        <button
+          mat-raised-button
+          class="custom-btn"
+          (click)="addTask()">
+
+          + Add Task
+
+        </button>
+
+      </div>
+
+      <!-- Task List -->
+      <div class="task-list">
+
+        <div class="empty-message" *ngIf="tasksList.length === 0">
+          <h2>📝</h2>
+          <h3>No Tasks Available</h3>
+          <p>Start by adding your first task.</p>
+        </div>
+
+        <div
+          class="task-item"
+          *ngFor="let item of tasksList; let i = index">
+
+          <div class="task-name">
+            <span class="number">{{ i + 1 }}</span>
+            {{ item }}
+          </div>
+
+          <button
+            class="delete-btn"
+            (click)="deleteTask(i)">
+
+            Delete
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <h2>Task<span>Master.</span></h2>
+
+    <p>Make Every Day Productive.</p>
+
+    <small>© 2026 TaskMaster. All Rights Reserved.</small>
+
+  </footer>
+
+</section>

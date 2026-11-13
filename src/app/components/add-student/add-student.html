@@ -1,0 +1,36 @@
+<section class="add-student-section">
+
+  <div class="student-card">
+
+    <div class="form-header">
+      <h3>Add Student</h3>
+      <p>Enter student details below</p>
+    </div>
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="student.name" placeholder="Enter student name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Age</mat-label>
+      <input matInput type="number" [(ngModel)]="student.age" placeholder="Enter age">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Contact</mat-label>
+      <input matInput [(ngModel)]="student.contact" placeholder="Enter contact number">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Course</mat-label>
+      <input matInput [(ngModel)]="student.course" placeholder="Enter course name">
+    </mat-form-field>
+
+    <button matButton class="add-btn" (click)="addStudent()">
+      Add Student
+    </button>
+
+  </div>
+
+</section>

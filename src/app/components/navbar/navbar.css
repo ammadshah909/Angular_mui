@@ -1,0 +1,68 @@
+mat-toolbar {
+  height: 75px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo / App Name */
+mat-toolbar span:first-child {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* Spacer */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* Navigation Links */
+mat-toolbar a[mat-button] {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 12px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+mat-toolbar a[mat-button]:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #c7d2fe;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  mat-toolbar {
+    height: auto;
+    min-height: 70px;
+    padding: 12px 15px;
+    flex-wrap: wrap;
+  }
+
+  mat-toolbar span:first-child {
+    font-size: 21px;
+  }
+
+  .example-spacer {
+    flex: 1;
+  }
+
+  mat-toolbar a[mat-button] {
+    margin: 5px 2px;
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
