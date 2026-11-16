@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 mat-toolbar {
   height: 75px;
   padding: 0 50px;
@@ -67,8 +66,3 @@ mat-toolbar a[mat-button]:hover {
     font-size: 13px;
   }
 }
-=======
-.example-spacer {
-  flex: 1 1 auto;
-}
->>>>>>> 4c172d8013fe21c9d093dabaeb96fd8afe33dd15
