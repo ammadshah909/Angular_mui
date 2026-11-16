@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -38,15 +37,3 @@ export class About {
   ];
 
 }
-=======
-import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  imports: [RouterOutlet,About, FormsModule],
-  selector: 'app-about',
-  styleUrl: './about.css',
-  templateUrl: './about.html',
-})
-export class About {}
->>>>>>> 4c172d8013fe21c9d093dabaeb96fd8afe33dd15
